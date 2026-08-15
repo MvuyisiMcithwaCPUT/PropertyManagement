@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PropertyManagement — Fault management that closes the job</title>
+    <meta
+      name="description"
+      content="Four-sided fault management for owners, tenants, property managers, and contractors. One work order. Status, access, spend, and evidence until closed."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="logo" href="#home">PropertyManagement</a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Open menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a class="nav-cta" href="#signup">Sign up</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-label="Home">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2400&q=80"
+            alt=""
+            width="2400"
+            height="1600"
+          />
+        </div>
+        <div class="hero-content">
+          <p class="brand-mark">PropertyManagement</p>
+          <h1>One fault. Four roles. Closed with proof.</h1>
+          <p class="hero-lede">
+            Work orders that carry status, access, spend authority, and evidence
+            — so WhatsApp stops being your maintenance system.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#signup">Join the waitlist</a>
+            <a class="btn btn-ghost" href="#about">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-heading">
+        <div class="section-inner">
+          <p class="eyebrow">About Us</p>
+          <h2 id="about-heading">Built for the people who keep homes working</h2>
+          <p class="section-lede">
+            Residential maintenance still runs on chats, calls, and memory. We
+            are building four-sided operations software so tenants, managers,
+            contractors, and owners share one trustworthy file for every fault.
+          </p>
+          <ul class="role-list">
+            <li>
+              <strong>Tenants</strong>
+              <span>Report once, see progress, confirm the fix.</span>
+            </li>
+            <li>
+              <strong>Managers</strong>
+              <span>Triage a queue, dispatch with access, keep the audit trail.</span>
+            </li>
+            <li>
+              <strong>Contractors</strong>
+              <span>Arrive prepared with unit, photos, and who pays.</span>
+            </li>
+            <li>
+              <strong>Owners</strong>
+              <span>Control spend and retain proof the asset was fixed.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="signup" id="signup" aria-labelledby="signup-heading">
+        <div class="section-inner signup-layout">
+          <div class="signup-copy">
+            <p class="eyebrow">Early access</p>
+            <h2 id="signup-heading">Sign up for the waitlist</h2>
+            <p class="section-lede">
+              Tell us your role and how we can reach you. We will share product
+              updates as the fault-management MVP takes shape.
+            </p>
+          </div>
+          <form class="signup-form" id="signup-form" novalidate>
+            <div class="field">
+              <label for="name">Full name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+                placeholder="Alex Morgan"
+              />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                placeholder="you@company.com"
+              />
+            </div>
+            <div class="field">
+              <label for="role">I am a…</label>
+              <select id="role" name="role" required>
+                <option value="" disabled selected>Select your role</option>
+                <option value="owner">Owner / landlord</option>
+                <option value="manager">Property manager</option>
+                <option value="tenant">Tenant</option>
+                <option value="contractor">Contractor</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Anything else? <span class="optional">(optional)</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="3"
+                placeholder="Portfolio size, city, or what hurts most today"
+              ></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Request access</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-heading">
+        <div class="section-inner">
+          <p class="eyebrow">Contact Us</p>
+          <h2 id="contact-heading">Talk to the team</h2>
+          <p class="section-lede">
+            Questions about the product, a pilot portfolio, or partnership —
+            reach out and we will get back to you.
+          </p>
+          <div class="contact-details">
+            <a href="mailto:hello@propertymanagement.example">
+              <span class="contact-label">Email</span>
+              <span>hello@propertymanagement.example</span>
+            </a>
+            <p>
+              <span class="contact-label">Response</span>
+              <span>We aim to reply within two business days.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="logo" href="#home">PropertyManagement</a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#signup">Sign up</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+        <p class="footer-meta">
+          &copy; <span id="year"></span> PropertyManagement. Fault management
+          first — then the rest of the operations stack.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

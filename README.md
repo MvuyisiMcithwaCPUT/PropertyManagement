@@ -2,7 +2,7 @@
 
 Four-sided operations software for **owners**, **tenants**, **property managers**, and **contractors**. The first product is **fault management**: one work order that carries status, access, spend authority, and evidence until the job is closed.
 
-The full business case lives in [`docs/wiki/Home.md`](docs/wiki/Home.md) and on the [GitHub wiki](https://github.com/MvuyisiMcithwaCPUT/PropertyManagement/wiki).
+The full business case lives in [`docs/wiki/Home.md`](docs/wiki/Home.md). The sequenced plan — operations product **and** a marketing website with signups — is [`docs/wiki/Roadmap.md`](docs/wiki/Roadmap.md). Both are intended GitHub wiki pages ([Home](https://github.com/MvuyisiMcithwaCPUT/PropertyManagement/wiki), [Roadmap](https://github.com/MvuyisiMcithwaCPUT/PropertyManagement/wiki/Roadmap)).
 
 ---
 
@@ -48,17 +48,22 @@ The MVP is done when a real manager can run a leaking geyser (or equivalent) **w
 
 ## Roadmap to version 1
 
-Version 1 is a **production fault product** used daily by one real portfolio, not a complete PMS.
+Detail: [`docs/wiki/Roadmap.md`](docs/wiki/Roadmap.md) (wiki page **Roadmap**).
+
+Version 1 is a **production fault product** used daily by one real portfolio, **and** a **live marketing site that collects and confirms signups**. It is not a complete PMS.
+
+Two workstreams run in parallel. The app proves one fault; the site explains the product and captures owners, managers, tenants, and contractors before we need them in the app.
 
 | Release | Goal | Ships |
 | --- | --- | --- |
+| **Marketing MS-0 → MS-1** | Story + signups | Landing page; role-aware waitlist (owner / manager / tenant / contractor); confirmation |
 | **MVP** | One live job, four roles, no chat to close | Items 1–10 above; one property / small book |
 | **v0.2** | Access stops being the failure mode | Diary, no-show handling, key/access notes, duplicate-fault detection |
 | **v0.3** | Money is on the ticket | Quotes, threshold rules, extra-work sign-off, invoice attached to the job |
 | **v0.4** | The file survives an argument | Permissions, immutable event log, photo/evidence retention, basic owner report |
-| **v1.0** | Daily driver for one manager | Reliability, mobile-usable tenant and contractor flows, onboarding, SLAs, support runbook |
+| **v1.0** | Daily driver + public demand channel | App reliability, mobile-usable tenant and contractor flows, onboarding, SLAs; marketing site production-ready (MS-3) |
 
-**After v1 (not version 1):** incoming/outgoing inspections, lease documents on the unit, planned maintenance, rent and arrears, owner distributions, contractor payments, body-corporate workflows.
+**After v1 (not version 1):** incoming/outgoing inspections, lease documents on the unit, planned maintenance, rent and arrears, owner distributions, contractor payments, body-corporate workflows. Full sequence is in the [roadmap wiki page](docs/wiki/Roadmap.md).
 
 ---
 
@@ -66,10 +71,11 @@ Version 1 is a **production fault product** used daily by one real portfolio, no
 
 1. Confirm geography and tenancy-law baseline (repair duties, notice, tribunal language).
 2. Confirm spend-threshold and emergency-override policy with an owner and a manager.
-3. Specify the fault lifecycle (states, who acts, SLAs) as the next wiki page.
-4. Specify roles and permissions.
-5. Choose stack and sketch the domain model (Organisation → Property → Unit → Fault → JobEvent).
-6. Implement MVP behind the success criteria above; do not start leases or rent until a real job has closed in the product.
+3. Ship marketing **MS-0 / MS-1**: landing page plus role-aware signups (see [roadmap](docs/wiki/Roadmap.md)).
+4. Specify the fault lifecycle (states, who acts, SLAs) as the next product wiki page.
+5. Specify roles and permissions.
+6. Choose stacks (app and marketing site may differ) and sketch the domain model (Organisation → Property → Unit → Fault → JobEvent).
+7. Implement the product MVP behind the success criteria above; do not start leases or rent until a real job has closed in the product.
 
 ---
 
@@ -77,9 +83,10 @@ Version 1 is a **production fault product** used daily by one real portfolio, no
 
 | Location | Use |
 | --- | --- |
-| [README](README.md) (this file) | Business case, MVP, roadmap |
-| [`docs/wiki/Home.md`](docs/wiki/Home.md) | Wiki home / full business case (markdown in git) |
-| [GitHub wiki](https://github.com/MvuyisiMcithwaCPUT/PropertyManagement/wiki) | Same home page on GitHub |
+| [README](README.md) (this file) | Business case, MVP, roadmap summary |
+| [`docs/wiki/Home.md`](docs/wiki/Home.md) | Wiki home / full business case |
+| [`docs/wiki/Roadmap.md`](docs/wiki/Roadmap.md) | Wiki **Roadmap** — product releases, marketing website, signups |
+| [GitHub wiki](https://github.com/MvuyisiMcithwaCPUT/PropertyManagement/wiki) | Published wiki (when Wikis are enabled on the repo) |
 
 ---
 

@@ -5,9 +5,9 @@
 **Status:** discovery / not built  
 **Repository:** [MvuyisiMcithwaCPUT/PropertyManagement](https://github.com/MvuyisiMcithwaCPUT/PropertyManagement)
 
-This page is the first source of truth for *why* we are building the product, *who* it is for, and *what* we will prove first. Feature specs and technical design will sit on later wiki pages.
+This page is the first source of truth for *why* we are building the product, *who* it is for, and *what* we will prove first. Sequence and releases — including the marketing website and signups — are on [[Roadmap]].
 
-The same document lives in the repository at [`docs/wiki/Home.md`](https://github.com/MvuyisiMcithwaCPUT/PropertyManagement/blob/main/docs/wiki/Home.md).
+The same document lives in the repository at [`docs/wiki/Home.md`](https://github.com/MvuyisiMcithwaCPUT/PropertyManagement/blob/docs/business-case-and-wiki/docs/wiki/Home.md).
 
 ---
 
@@ -176,9 +176,10 @@ The first release is successful when a real property manager can run a live leak
 
 ## 10. What this wiki will grow into
 
-| Page (planned) | Purpose |
+| Page | Purpose |
 |---|---|
 | **Home** (this page) | Business case and north star |
+| [[Roadmap]] | Releases through v1, including the marketing website and signups |
 | Fault lifecycle | States, SLAs, responsibilities |
 | Roles and permissions | Who can see, spend, dispatch, close |
 | MVP scope | In / out / later |
